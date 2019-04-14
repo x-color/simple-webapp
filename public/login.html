@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script type="text/javascript">
+            if(localStorage.getItem('token') !== null) {
+                location.href = '/todos'
+            }
+        </script>
+        <title>login - Simple Todo</title>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form id="login-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="username" v-model:value="name">
+            </div>
+            <div>
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="password" v-model:value="password">
+            </div>
+            <button type="button" name="button" @click="login">login</button>
+        </form>
+        <script src="assets/js/login.js"></script>
+    </body>
+</html>

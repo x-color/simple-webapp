@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <title>signup - Simple Todo</title>
+    </head>
+    <body>
+        <h1>Sign Up</h1>
+        <form id="signup-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="username" v-model:value="name">
+            </div>
+            <div>
+                <label for="pwd">Password:</label>
+                <input type="password" id="pwd" name="password" v-model:value="password">
+            </div>
+            <button type="button" name="button" @click="signup">signup</button>
+        </form>
+        <script src="assets/js/signup.js"></script>
+    </body>
+</html>
