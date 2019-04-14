@@ -1,5 +1,7 @@
 # Simple Web Application
 
+内部での処理内容については Qiita の [ここ](https://qiita.com/x-color/items/24ff2491751f55e866cf) にまとめてあります。
+
 ## ディレクトリ構成
 
 ```
@@ -156,6 +158,6 @@ name     | third todo
 
 - Go言語 (https://golang.org/)
 - Echo (https://echo.labstack.com/)
-- GORM (http://doc.gorm.io/)
+- GORM (http://gorm.io/)
 - SQLite (https://www.sqlite.org/index.html)
 - JWT (https://jwt.io/)
